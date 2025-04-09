@@ -1,25 +1,75 @@
+""" This is where I will be actually answering the assignment based on a run of my code 
+
+        A couple limitations. The file pathing was a massive pain to figure out. It may not work for you as  
+    I have a whole directory for this. If you input 0 or a negative integer/float, im pretty sure the coin 
+    one just breaks. Like just straight up implodes. Please do not do that. Furthermore, I did my best to 
+    add context throughout with comments, but im unsure how it will look in HTML. When i render the HTML in VS 
+    it looks fine, but it breaks immediately in my browser's HTML reader. Finally, for the sake of simplicity, 
+    I will upload three files. This one with all the relevant info. My script titled 'Homework 1' and my six 
+    plots titled 'Plots'. If there is any issue with the submission please let me know. I spent a lot of time 
+    on this. 
+
+Question 1: 
+    1:
+        A: The total time across all mice is 88.46 hours. The script records the time by mouse also.
+        B: The AVG_Amp data has a standard deviation that varies by mouse, but the average STD of AVG_Amp is 4.79
+    
+    2: 
+        A: The animal with the highest average amp is mouse 'PL' 
+        B: The state with the most consistent movement frequency was Non-REM Sleep at (0.88 Hz) 
+    
+    3: Plots will be attached - They are numbered in descending order. 1 is the top 6 is the bottom.
+    
+        A: I would measure which state has the most dispersed data by either looking for the highest STD 
+            or by looking at which box plot(since I have those) is the widest. The most dispersed data is 
+            in the 'WAKE' state. The scatterplots also support this. 
+    
+        B: I believe that frequency is more useful for distinguishing states than amplitude. The variance of
+            amplitude across the plots is significantly greater than the variance of frequency. This makes 
+            frequency more reliable and therefore better. As supported by plots 1, 2, and 3. 
+    
+        C: The data collected would be significantly more useful for distinguishing sleep states than mice. 
+            This is because the sleep state data is much more consistent than the mouse data, in which 
+            subjects AAR and PR can be seen to be wildly different, but both pairs AAL & AAR and PL & PR
+            are relatively similar. As supported by graphs 4 and 5. 
+
+Question 2:
+
+These answers are based on one particular iteration I ran. It can do as many as you tell it. Within reason.
+
+    A: 
+        The mean is 0.52
+        The Standard Deviation is 0.15
+        The range is 0.5
+        The median is 0.5
+    B:
+        Done
+    C: 
+        Done """
+
+# Importing necessary libraries
 import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-# Above, I import all the libs I use
 
-def read_csv_file(file_path):
 # This takes a file and reads its CSV to extract the data so that the script can work with it
 # It is really simple
+def read_csv_file(file_path):
 
+    # Tries to read file and reports errors
     try:
         data = pd.read_csv(file_path)
         print(f"CSV file '{file_path}' successfully loaded.")
         return data
+    
     except Exception as e:
         print(f"Error reading CSV file: {e}")
         return None
 
-
-def coin_analyzer(data, repetitions):
 # This function analyzes the data from the coin flip portion
+def coin_analyzer(data, repetitions):
     
     # I put this in because for some reason you guys gave us only the SECOND column filled
     # It made this unnecessarily annoying
@@ -28,6 +78,9 @@ def coin_analyzer(data, repetitions):
     else:
         print("The data set has somehow morphed. I don't know what happened. Pain")
         return
+    
+    # Below is where the coin rows are grabbed and sampled for values
+    # it also has a check for how many times you want it to repeat
     
     # This is for when you want me to run it more than once
     if repetitions >= 1:
@@ -85,6 +138,7 @@ def coin_analyzer(data, repetitions):
 def sleep_analyzer(data):
     print('\nSleep Data Analysis:')
     
+    # Sorts the data into groups by mouse
     grouped_data = data.groupby('Animal_ID')
     
     # Initialize variables to track results
@@ -102,7 +156,7 @@ def sleep_analyzer(data):
     for mouse_id, group in grouped_data:
         print(f'\nSummary for Mouse "{mouse_id}":')
         
-        # 1. Total length of time covered by measurements (sum of all epochs)
+        # Total length of time covered by measurements (sum of all epochs)
         total_time = group['Epoch'].sum()
         total_time_by_mouse[mouse_id] = total_time
         complete_overall_time.append(total_time)
@@ -122,6 +176,7 @@ def sleep_analyzer(data):
     # Group data by Sleep state to calculate stats
     grouped_by_state = data.groupby('Sleep_State')
     
+    # Iterate through sleep states
     for state, group in grouped_by_state:
         
         # Standard deviation of movement frequency 
@@ -133,6 +188,7 @@ def sleep_analyzer(data):
             lowest_std_dev_freq_value = std_dev_freq
             lowest_std_dev_freq_state = state
     
+    # Find overall sum of time in hours
     time_final = np.sum(complete_overall_time) * (1/10) * (1/60) * (1/60) 
     time_final = np.round(time_final, 2)
     
@@ -142,15 +198,18 @@ def sleep_analyzer(data):
     print(f'Mouse with the highest average amplitude: {highest_avg_amp_mouse} ({np.round(highest_avg_amp_value, 2)} Volts)')
     print(f'Sleep state with the lowest standard deviation of movement frequency: {lowest_std_dev_freq_state} ({np.round(lowest_std_dev_freq_value, 2)} Hz)')
     
+    # Print total time by mouse
     print('\nTotal Time Covered by Each Mouse:')
     for mouse_id, total_time in total_time_by_mouse.items():
         print(f'Mouse {mouse_id}: {total_time} seconds')
     print(f'The overall time covered by all mice is {time_final} hours.')
     
+    # Print standard deviations by mouse
     print('\nStandard Deviation of Average Amplitude by Each Mouse:')
     for mouse_id, std_dev in std_dev_avg_amp_by_mouse.items():
         print(f'Mouse {mouse_id}: {np.round(std_dev, 2)}')
     
+    # Print standad deviation of movement frequency 
     print('\nStandard Deviation of Movement Frequency by Sleep State:')
     for state, std_dev in std_dev_freq_by_state.items():
         print(f'{state}: {np.round(std_dev, 2)} Hz')
@@ -175,7 +234,7 @@ def sleep_analyzer(data):
     plt.legend(title='Sleep State')
     plt.show()
 
-    # Box plot for individual Mice by Sleep State
+    # Box plots for individual Mice by Sleep State
     plt.figure(figsize=(10,6))
     sns.boxplot(x='Animal_ID', y='AVG_Amp', data=data)
     plt.title('Distribution of Amplitude by Mouse')
@@ -230,6 +289,3 @@ if __name__ == "__main__":
     if sleep_data is not None:
         sleep_analyzer(sleep_data)
         #print('Sleep Data Acquired')
-        
-        
-# 
