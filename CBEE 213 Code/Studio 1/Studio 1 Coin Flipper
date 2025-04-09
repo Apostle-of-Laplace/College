@@ -1,0 +1,76 @@
+import numpy 
+
+# I am aware that this is ghoulish overkill for what I was asked to create
+# I do enjoy coding though
+# It started struggling around 10000 trials and 100 flips per when I tested it
+
+def coin_flipper(trial_amount, flip_amount):
+   
+    trial_data = []
+    
+    for i in range(trial_amount):
+        flip_data = [numpy.random.randint(2) for i in range(flip_amount)]
+        trial_data.append(flip_data)
+            
+    return trial_data
+
+def results_reader(trial_data, yes_no_reply):
+    
+    heads_percent_data = []
+    tails_percent_data = []
+    
+    if int(len(trial_data)) > 100 and yes_no_reply == 'yes':
+        yes_no_reply = 'too large of a set'
+    
+    
+    for trial_index, flips in enumerate(trial_data):
+        tails_percent = numpy.round((numpy.sum(flips) / len(flips) * 100 ), 2)
+        heads_percent = numpy.round(100 - tails_percent, 2) 
+        heads_percent_data.append(heads_percent)
+        tails_percent_data.append(tails_percent)
+        
+        if yes_no_reply == 'yes':
+            print(f'In trial {trial_index + 1}, we saw {heads_percent}% heads & {tails_percent}% tails.')
+            print(f'The first ten results for trial {trial_index + 1} were: \n{flips[:10]}')
+    
+    if yes_no_reply == 'too large of a set':
+        print(f'\nUnfortunately, {len(trial_data)} trials is an unreasonable number, and will not be printed.')
+        
+    
+    average_heads = numpy.round(numpy.average(heads_percent_data), 2)
+    average_tails = numpy.round(numpy.average(tails_percent_data), 2)
+    
+    most_heads = max(heads_percent_data)
+    most_heads_index = heads_percent_data.index(most_heads) + 1
+    most_tails = min(heads_percent_data)
+    most_tails_index = heads_percent_data.index(most_tails) + 1
+    
+    
+    if len(trial_data) >= 10: 
+        print(f'\nOut of {int(len(trial_data))} trials, we averaged {average_heads}% heads and {average_tails}% tails.')
+        print(f'The most extreme trials were trials {most_heads_index} and {most_tails_index}')
+        print(f'Trial {most_heads_index} had {most_heads}% heads and only {100 - (most_heads)}% tails')
+        print(f'Trial {most_tails_index} had {most_tails}% tails and only {(100 - most_tails)}% heads')
+
+    print('Pretty crazy stuff')
+    
+    return None 
+
+while True:
+    
+    try:
+        how_many_trials = int(input('\nHow many trials do you want? '))
+        how_many_flips = int(input('\nHow many flips do you want in each trial? '))
+
+        if isinstance(how_many_trials, int) and isinstance(how_many_flips, int):
+            trial_data = coin_flipper(how_many_trials, how_many_flips)
+            print('\nWould you like to see the data for all trials conducted?') 
+            y_n_reply = input('Respond with "yes" for yes: ')
+            results_reader(trial_data, y_n_reply)
+        else:
+            print('\nPlease enter whole numbers for both fields')
+    except ValueError:
+        print('\nInvalid input. Please enter whole numbers for trials and flips.')
+        
+    if input('Type "exit" to quit, hit ENTER to continue: ') == "exit":
+        break        

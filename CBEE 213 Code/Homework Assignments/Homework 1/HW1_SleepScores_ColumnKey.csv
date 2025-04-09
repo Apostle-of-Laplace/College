@@ -1,0 +1,9 @@
+Column Title,Description
+Animal_ID,Unique animal ID for 4 mice included in this data set
+Epoch,The starting time (in seconds) for a 10-second period of time (epoch) of collected sensor data
+Sleep_State,"What state (wake, Non-REM sleep, or REM sleep) the 10-second epoch was scored"
+Tot_Mov,Total number of movements detected by the motion sensor for the 10-second epoch
+AVG_Amp,Average peak amplitude of all movements in a 10-second epoch collected by the motion sensor (units: Volts)
+STDEV_Amp,Standard deviation of peak amplitude of all movements in a 10-second epoch collected by the motion sensor (units: Volts)
+AVG_Freq,Average frequency of all movements in a 10-second epoch collected by the motion sensor (units: Hz)
+STDEV_Freq,Standard deviation of frequency of all movements in a 10-second epoch collected by the motion sensor (units: Hz)
