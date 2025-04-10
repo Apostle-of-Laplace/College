@@ -1,26 +1,55 @@
-- - - - - EXPLANATION OF FILE - - - - - 
-The 'studio 2.py' file uses your os to determine where 
-to get your csv filepath. That all just means that the 
-penguin_data.csv file, and the studio 2.py file, need 
-to be in the same folder in your computer. 
+- - - - - READ ME - - - - - 
+Before anything else, make sure all the files you downloaded from 
+my GitHub page are in the same directory (folder). If they are not 
+together the references in the script will not work. More detailed 
+explanation will be below the common issues section. 
 
-When running the script itself, the markups and annotations
-should explain each component, if they are unclear, reach out
-in the CBEE 213 server, someone can explain it. Furthermore, 
-I have inbuilt contingencies for misinputs, and error reporting, 
-the script should be able to minimally trouble shoot for you. 
+In the file, each component should be explained by the annotations
+and markups. If they are unclear, reach out to someone in the CBEE 
+server. The file also has minimal contingencies against misinputs.
+This means that the script can do some troubleshooting for you, but
+not a lot. You can ignore the 'try' and 'except' statements, they 
+are just the script's way of troubleshooting and do not need to be
+included in your script.
+
 
 - - - - - COMMON ISSUES - - - - - 
-Since I already explained the filepath issue we will skip it
+If you are in Visual studio, you can open the CMD terminal
+with 'ctrl + ~'. If you are in a different IDE, or cannot 
+access the terminal, importing libraries will be up to you. 
 
-The other issue that may arise is from the libraries not being
-installed within an environment your IDE can recognize. If this
-is the case, you can either manually install them, or run the 
-command 'pip install -r studio_2_requirements.txt' in your cmd 
-window. 
-If you get a message saying 'file not found'. Use the 'cd "PATH"' 
-command in your terminal to navigate to the correct directory. 
 
-Note that 'PATH' is not the input, it should be something like
-"c:\Users\username\Documents\Python\Studio 2"
-Your input may vary, just copy the file path out of your file explorer.
+- - - - - 'Filepath not found' - - - - -
+If you receive an error report saying filepath not found,
+you have likely input the file name incorrectly, or do not have
+the files within the same directory. Check that all the files 
+involved with the script are in the same parent directory.
+If you receive this report while attempting to install something 
+with the CMD terminal, see the pip install section below. 
+
+
+- - - - - 'Module not found' - - - - -
+This error report will generally happen when the library you are 
+importing is not installed, or is in a different file. If this happens,
+run the command 'pip install -r studio_2_requirements.txt' in 
+your CMD terminal. 
+
+The terminal may return a 'file not found' type report when you try to 
+run install the requirements. If this happens, check to make sure your 
+terminal is in the correct directory. You can do this by trying to match 
+the filepath listed in the terminal with the filepath of your script's 
+directory. 
+
+Example file path; 
+"C:\Users\username\OneDrive\Current Project\CBEE Homework" 
+
+If your directories do not match, run the command 'cd (Filepath)' in your 
+terminal. (Filepath) should be the path that leads to the directory your 
+script is currently in. You can find this path in your File Explorer.
+ After the cd command is run, your paths should match. 
+
+You can then retry installing from the requirements file. 
+
+- - - - - Other Issues - - - - -
+If you run into a problem that cannot be solved with a quick google search. 
+Consult the CBEE discord, or DM me and I can try to help you resolve it.
