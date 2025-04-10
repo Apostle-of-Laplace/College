@@ -1,13 +1,10 @@
-Within the CBEE 213 Folder, each assignment will come with its own folder called a 'Directory'
-If there is a 'README' file in the directory you are looking at ("Homework 1") for example, please read the README
-If not, assume you should download the entire directory's contents.
+This repository contains code I make for my classes. If there is a class we have together, it should have the matching 
+tag and numbers (e.g. CBEE 213). When downloading a program I have written, always download the entire parent folder. 
+Many programs depend on other elements that are within their parent folders and will not function without them. 
 
-I use Visual Studio for my IDE, if you use a different one, please note that filepath dependencies might become unreliable.
-Additionally I will try to add a 'requirements' file containing libraries that were used in the script going forward. 
-When you go to use a script, just open your CMD promp and type pip install -r 'requirements' and the libraries should install automatically.
+When you open one of the folders it should have a README. The README file will explain the script, as well as common 
+issues that will occur when attempting to use it. Always read the README file before downloading the script, as well 
+as when you encounter issues during its use. 
 
-Please note that the requirements file name may vary slightly depending on the assignment. 
-
-This will get updated as I work on/finish whatever code I do for classes. Right now it is the CBEE 213 process data analysis code.
-As we get more homework, Studio 3/Homework 2, etc, I will continue to upload to this repository
-I hope this helps
+Disclaimer: This repository is only to help other students learn how coding works, it is not meant to assist anyone in
+cheating or otherwise circumventing the learning process in any way. 
