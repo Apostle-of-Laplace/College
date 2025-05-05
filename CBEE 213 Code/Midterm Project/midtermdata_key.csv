@@ -1,0 +1,11 @@
+Colum Title,Description
+Soil,Raw soil taken from 2 locations
+Biochar,Biochar Type (Pyrolysis temperature)
+Replicate,Number of replicated samples per condition
+Treatment,A concatenated value of soil type and biocharcoal type (useful for grouping)
+day,Incubation day since start of experiment
+Temp,Temperature during sampling (Celsius)
+DeltaCO2,Total CO2 Respired from Soil and Biochar since Previous Measure (mol CO2)
+FractionCO2,Fraction of Respiration Contributed by Biochar (unitless)
+Grav,Gravimetric water content of soil and biochar mixture (g/g)
+Nitrate,N concentration as nitrate from 2M KCl extract (mg N-NH4/kg soil)
