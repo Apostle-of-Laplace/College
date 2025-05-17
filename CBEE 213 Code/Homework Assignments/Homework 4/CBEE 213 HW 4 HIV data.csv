@@ -1,0 +1,85 @@
+Year,Race/Ethnicity,Sex,Treatment,HIV_Prevalence_per_100k,HIV_Prevalence_Perc_HIV_Patients
+2019,American Indian/Alaska Native,Female,Female.American Indian/Alaska Native,77.9666666666667,0.0942174066658815
+2017,American Indian/Alaska Native,Female,Female.American Indian/Alaska Native,73.9333333333333,0.0940102770622769
+2015,American Indian/Alaska Native,Female,Female.American Indian/Alaska Native,71.1,0.0913427803911962
+2013,American Indian/Alaska Native,Female,Female.American Indian/Alaska Native,68.0666666666667,0.0917571719349717
+2011,American Indian/Alaska Native,Female,Female.American Indian/Alaska Native,65.3333333333333,0.0924526848228226
+2009,American Indian/Alaska Native,Female,Female.American Indian/Alaska Native,59.0666666666667,0.0914257306397077
+2019,Asian,Female,Female.Asian,31.3,0.254139057454023
+2017,Asian,Female,Female.Asian,29.8666666666667,0.243720662648239
+2015,Asian,Female,Female.Asian,27.5666666666667,0.226280978696372
+2013,Asian,Female,Female.Asian,25.6,0.209877961488499
+2011,Asian,Female,Female.Asian,23.5333333333333,0.193395922333455
+2009,Asian,Female,Female.Asian,21.9,0.174849581688975
+2019,Black/African American,Female,Female.Black/African American,615.966666666667,13.2330827067669
+2017,Black/African American,Female,Female.Black/African American,599.5,13.4664818713144
+2015,Black/African American,Female,Female.Black/African American,581.5,13.709859345958
+2013,Black/African American,Female,Female.Black/African American,568.533333333333,14.0575522191096
+2011,Black/African American,Female,Female.Black/African American,553.833333333333,14.351392529257
+2009,Black/African American,Female,Female.Black/African American,522.3,14.4679090577872
+2019,Hispanic/Latino,Female,Female.Hispanic/Latino,132.766666666667,3.35141233132295
+2017,Hispanic/Latino,Female,Female.Hispanic/Latino,130.6,3.28944443718048
+2015,Hispanic/Latino,Female,Female.Hispanic/Latino,129.166666666667,3.24557506508173
+2013,Hispanic/Latino,Female,Female.Hispanic/Latino,126.933333333333,3.18955588350521
+2011,Hispanic/Latino,Female,Female.Hispanic/Latino,125.233333333333,3.16068685426595
+2009,Hispanic/Latino,Female,Female.Hispanic/Latino,127.4,3.06557114692472
+2019,Multiracial,Female,Female.Multiracial,323.766666666667,0.880684811782135
+2017,Multiracial,Female,Female.Multiracial,340.433333333333,0.913167976360142
+2015,Multiracial,Female,Female.Multiracial,361.1,0.957300018130158
+2013,Multiracial,Female,Female.Multiracial,379,0.994011482165528
+2011,Multiracial,Female,Female.Multiracial,395.2,1.02609901556759
+2009,Multiracial,Female,Female.Multiracial,477.5,1.03649878609784
+2019,Native Hawaiian/Other Pacific Islander,Female,Female.Native Hawaiian/Other Pacific Islander,63,0.0157442245349565
+2017,Native Hawaiian/Other Pacific Islander,Female,Female.Native Hawaiian/Other Pacific Islander,55.1,0.0155594199866634
+2015,Native Hawaiian/Other Pacific Islander,Female,Female.Native Hawaiian/Other Pacific Islander,55.5333333333333,0.0159157874924054
+2013,Native Hawaiian/Other Pacific Islander,Female,Female.Native Hawaiian/Other Pacific Islander,51.2333333333333,0.0153174091191606
+2011,Native Hawaiian/Other Pacific Islander,Female,Female.Native Hawaiian/Other Pacific Islander,48.9,0.0150943158894404
+2009,Native Hawaiian/Other Pacific Islander,Female,Female.Native Hawaiian/Other Pacific Islander,50.5666666666667,0.0146417371229327
+2019,White,Female,Female.White,42.3333333333333,3.84692150822233
+2017,White,Female,Female.White,40.5,3.86762725382775
+2015,White,Female,Female.White,38.9666666666667,3.92497159377928
+2013,White,Female,Female.White,37.6,4.01154107864017
+2011,White,Female,Female.White,36.4333333333333,4.11949037815978
+2009,White,Female,Female.White,34.4,4.23691011675934
+2019,American Indian/Alaska Native,Male,Male.American Indian/Alaska Native,223.566666666667,0.285007655164292
+2017,American Indian/Alaska Native,Male,Male.American Indian/Alaska Native,202.366666666667,0.268824936912436
+2015,American Indian/Alaska Native,Male,Male.American Indian/Alaska Native,179.9,0.248009488577309
+2013,American Indian/Alaska Native,Male,Male.American Indian/Alaska Native,166.233333333333,0.237567124126981
+2011,American Indian/Alaska Native,Male,Male.American Indian/Alaska Native,154.9,0.231131712057057
+2009,American Indian/Alaska Native,Male,Male.American Indian/Alaska Native,139.766666666667,0.232565266394489
+2019,Asian,Male,Male.Asian,149.233333333333,1.24205815445456
+2017,Asian,Male,Male.Asian,139.233333333333,1.1703560361397
+2015,Asian,Male,Male.Asian,127.7,1.07078650285861
+2013,Asian,Male,Male.Asian,115.066666666667,0.959841877207401
+2011,Asian,Male,Male.Asian,105.3,0.879243900559905
+2009,Asian,Male,Male.Asian,97.9666666666667,0.801549981101944
+2019,Black/African American,Male,Male.Black/African American,1571.23333333333,27.8556242213117
+2017,Black/African American,Male,Male.Black/African American,1510.03333333333,27.69498306769
+2015,Black/African American,Male,Male.Black/African American,1440.6,27.5347275563177
+2013,Black/African American,Male,Male.Black/African American,1375.43333333333,27.3224285163027
+2011,Black/African American,Male,Male.Black/African American,1318.9,27.1598629561903
+2009,Black/African American,Male,Male.Black/African American,1247.1,26.9113425791931
+2019,Hispanic/Latino,Male,Male.Hispanic/Latino,698.066666666667,18.4738019822846
+2017,Hispanic/Latino,Male,Male.Hispanic/Latino,667.3,17.7453223676469
+2015,Hispanic/Latino,Male,Male.Hispanic/Latino,635.933333333333,16.9652606798394
+2013,Hispanic/Latino,Male,Male.Hispanic/Latino,604.4,16.2488254198296
+2011,Hispanic/Latino,Male,Male.Hispanic/Latino,570.233333333333,15.5825226689895
+2009,Hispanic/Latino,Male,Male.Hispanic/Latino,538.033333333333,15.0234438046724
+2019,Multiracial,Male,Male.Multiracial,1300.13333333333,3.337403690595
+2017,Multiracial,Male,Male.Multiracial,1386.63333333333,3.48021077130268
+2015,Multiracial,Male,Male.Multiracial,1459.03333333333,3.58465053774602
+2013,Multiracial,Male,Male.Multiracial,1514.53333333333,3.65202381267987
+2011,Multiracial,Male,Male.Multiracial,1536.3,3.6466923794145
+2009,Multiracial,Male,Male.Multiracial,1784.03333333333,3.64238748846538
+2019,Native Hawaiian/Other Pacific Islander,Male,Male.Native Hawaiian/Other Pacific Islander,300.266666666667,0.0888866849729435
+2017,Native Hawaiian/Other Pacific Islander,Male,Male.Native Hawaiian/Other Pacific Islander,265.766666666667,0.0814581399301787
+2015,Native Hawaiian/Other Pacific Islander,Male,Male.Native Hawaiian/Other Pacific Islander,257.066666666667,0.0793021411578113
+2013,Native Hawaiian/Other Pacific Islander,Male,Male.Native Hawaiian/Other Pacific Islander,237.5,0.0729049760960048
+2011,Native Hawaiian/Other Pacific Islander,Male,Male.Native Hawaiian/Other Pacific Islander,229.7,0.0584904740715817
+2009,Native Hawaiian/Other Pacific Islander,Male,Male.Native Hawaiian/Other Pacific Islander,216.233333333333,0.0631637729373027
+2019,White,Male,Male.White,327.866666666667,27.0410155644676
+2017,White,Male,Male.White,319.6,27.6688327819981
+2015,White,Male,Male.White,311.4,28.346017523974
+2013,White,Male,Male.White,301.566666666667,28.9367950677943
+2011,White,Male,Male.White,291.166666666667,29.4834442084211
+2009,White,Male,Male.White,276.3,30.2377409502147
